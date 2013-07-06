@@ -1,0 +1,16 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+
+.grey-out {
+	opacity: 0.5;
+}
+
+td.input-span2 {
+	float: none;
+	width: 140px;
+	margin-left: 0;
+}
+
+table input[type="text"],
+table input[type="email"] {
+	margin-bottom: 2px;
+}

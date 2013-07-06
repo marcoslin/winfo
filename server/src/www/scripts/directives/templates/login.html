@@ -1,0 +1,85 @@
+
+<div class="modal-body">
+    <ul class="nav nav-tabs">
+        <li ng-class="fclass.login_tab"><a href="" data-toggle="tab" ng-click="setFormStatus('login')">Login</a></li>
+        <li ng-class="fclass.create_tab"><a href="" data-toggle="tab" ng-click="setFormStatus('create')">Create Account</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div ng-class="fclass.login" id="login">
+            <form class="form-horizontal" ng-submit="loginSubmit()">
+                <fieldset>
+                    <div class="control-group">
+                        <!-- Username -->
+                        <label class="control-label" for="user_name">Username</label>
+                        <div class="controls">
+                            <input type="text" id="user_name" name="user_name" class="input-xlarge" ng-model="user_name">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <!-- Password-->
+                        <label class="control-label" for="password">Password</label>
+                        <div class="controls">
+                            <input type="password" id="password" name="password" class="input-xlarge" ng-model="password">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <!-- Button -->
+                        <div class="controls">
+                            <button class="btn btn-success">Login</button>
+                        </div>
+                    </div>
+                    <div class="control-group" ng-show="alert_status.visible">
+                        <div class="controls">
+                            <span type="text" class="alert" ng-bind="alert_status.message"></span>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div ng-class="fclass.create" id="create">
+            <form class="form-horizontal" ng-submit="createSubmit()">
+                <div class="control-group">
+                    <label class="control-label" for="create_user_name">Username</label>
+                    <div class="controls">
+                        <input type="text" id="create_user_name" name="password" class="input-xlarge" ng-model="user_name">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="password">Password</label>
+                    <div class="controls">
+                        <input type="password" id="password" name="password" class="input-xlarge" ng-model="password">
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                    <label class="control-label" for="first_name">First Name</label>
+                    <div class="controls">
+                        <input type="text" id="first_name" name="first_name" class="input-xlarge" ng-model="first_name">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="last_name">Last Name</label>
+                    <div class="controls">
+                        <input type="text" id="last_name" name="last_name" class="input-xlarge" ng-model="last_name">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="email">Email</label>
+                    <div class="controls">
+                        <input type="text" id="login_email" name="login_email" class="input-xlarge" ng-model="login_email">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button class="btn btn-primary">Create Account</button>
+                    </div>
+                </div>
+                <div class="control-group" ng-show="alert_status.visible">
+                    <div class="controls">
+                        <span type="text" class="alert" ng-bind="alert_status.message"></span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

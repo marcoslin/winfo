@@ -1,0 +1,12 @@
+{ "profile_name": "Marcos Public", "profile_desc": "A Public Profile" }
+
+
+    profile_name = ndb.StringProperty(required=True, indexed=True)
+    profile_desc = ndb.TextProperty()
+    
+    user_key = ndb.KeyProperty(kind=User, required=True)
+    address_keys = ndb.KeyProperty(kind=PostalAddress, repeated=True)
+    email_keys = ndb.KeyProperty(kind=Email, repeated=True)
+    
+    modified_on = ndb.DateTimeProperty(auto_now=True)
+    created_on = ndb.DateTimeProperty(auto_now_add=True)

@@ -1,0 +1,29 @@
+{
+	"_comment_main": [
+		"This is the main section for app where:",
+		"* APP: name of the application",
+		"* INST: physical server location of deployed app",
+		"* RUN_MODE: prod, qa, test, dev or utest",
+		"Note: All relative path file should be set to be relative to this config file"
+	],
+	"APP": "WinfoServer",
+	"INST": "local",
+	"RUN_MODE" : "dev",
+
+
+	"_comment_flask": [
+		"Flask specific section"
+	],
+	"LOGGER_NAME": "WinfoServer",
+	"DEBUG": true,
+
+	"_comment_auth": [
+		"Authentication Section, also used by HashLib"
+	],
+	"AUTH_HEADER": "Authentication",
+	"AUTH_REALM": "WinfoServer App",
+	"AUTH_PASSW_SALT": "AAAAAAAAAAAAAAA",
+	"AUTH_PASSW_PEPPER": "BBBBBBBBBBBBBBB",
+	
+	"_end": "Indicating the end of config"
+}

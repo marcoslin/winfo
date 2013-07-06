@@ -1,0 +1,15 @@
+node_modules
+pyenv/
+
+# Python files
+*.pyc
+*.pyo
+test.py
+
+# Project generated files
+
+# Eclipse Dirs
+.project
+.settings/
+
+

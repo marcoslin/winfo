@@ -1,0 +1,12 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <ul class="nav">
+            <li ng-class="navclass.home"><a href="" ng-click="goToPage('/')">Home</a></li>
+            <li ng-class="navclass.info"><a href="" ng-click="goToPage('/info')">Info</a></li>
+            <li ng-class="navclass.profile"><a href="" ng-click="goToPage('/profile')">Profiles</a></li>
+        </ul>
+        <ul class="nav pull-right centred">
+            <li class=""><button class="btn btn-success btn-small" ng-click="mainButtonAction()">{{user_name || 'Login'}}</button></li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+{
+	"_comment_main": [
+		"Define mapping of shard_id for given APP and INST entry.",
+		"Note:",
+		" * Valid shard_id is from 1 to 255.  0 is reserved for unknown, mostly for dev purpose",
+		" * Wild card allowed only in INST"
+
+	],
+
+	"SHARD_CONFIG": [	
+		{ "shard_id": 1, "APP": "AngRestAuth", "INST": "*", "RUN_MODE": "dev" },
+		{ "shard_id": 5, "APP": "AngRestAuth", "INST": "*", "RUN_MODE": "utest" },
+		{ "shard_id": 10, "APP": "AngRestAuth", "INST": "*", "RUN_MODE": "test" },
+		{ "shard_id": 20, "APP": "AngRestAuth", "INST": "*", "RUN_MODE": "qa" },
+		{ "shard_id": 50, "APP": "AngRestAuth", "INST": "*", "RUN_MODE": "prod" }
+	],
+
+	"_end": "Indicating the end of config"
+}
