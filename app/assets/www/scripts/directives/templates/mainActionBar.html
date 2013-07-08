@@ -1,0 +1,23 @@
+<div id="main_action_bar" class="topcoat-navigation-bar">
+    <div class="topcoat-navigation-bar__item left quarter">
+        <a ng-class="icon_class.profile" ng-click="navigateTo('/profile')">
+          <span class="topcoat-icon profile-icon"></span>
+        </a>
+        <a ng-class="icon_class.nearby" ng-click="navigateTo('/nearby')">
+          <span class="topcoat-icon map-search-icon"></span>
+        </a>
+        <a ng-class="icon_class.livebook" ng-click="navigateTo('/livebook')">
+          <span class="topcoat-icon tileview-icon"></span>
+        </a>
+        <a ng-class="topcoat-icon-button--quiet" ng-click="goToPage('/intro')">
+          <span class="topcoat-icon hammer-icon"></span>
+        </a>
+    </div>
+    <div class="topcoat-navigation-bar__item center half">
+    </div>
+    <div class="topcoat-navigation-bar__item right quarter">
+        <a ng-class="icon_class.settings" ng-click="navigateTo('/settings')">
+          <span class="topcoat-icon settings-icon"></span>
+        </a>
+    </div>
+</div>

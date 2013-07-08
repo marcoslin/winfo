@@ -1,0 +1,40 @@
+<div>
+    <div class="topcoat-navigation-bar">
+        <div class="topcoat-navigation-bar__item left quarter">
+            <a class="topcoat-icon-button--quiet" ng-click="goHome()">
+              <span class="topcoat-icon home-icon"></span>
+            </a>
+        </div>
+        <div class="topcoat-navigation-bar__item center half">
+            <h1 class="topcoat-navigation-bar__title">Local DB</h1>
+        </div>
+        <div class="topcoat-navigation-bar__item right quarter">
+            <a class="topcoat-icon-button--quiet">
+              <span class="topcoat-icon topcoat-icon--edit"></span>
+            </a>
+        </div>
+    </div>
+    
+    <ul class="topcoat-list">
+        <li class="topcoat-list__item fill" ng-click="show_ang=!show_ang">
+            <div ng-show="show_ang" ng-animate="{ show: 'easyout-animate-enter', hide: 'easyout-animate-leave'}">Angular ngAnimate ngShow</div>
+        </li>
+        <li class="topcoat-list__item fill" ng-click="toggleManualAnimate()">
+            <div ng-class="manual_animate">Manual ngClass Animate</div>
+        </li>
+        <li class="topcoat-list__item fill" ng-click="toggleRightBig()">
+            <div ng-class="class_rightbig">Right Big</div>
+        </li>
+        <li class="topcoat-list__item fill" ng-click="toggleDownBig()">
+            <div ng-class="class_downbig">Down Big</div>
+        </li>
+        <li class="topcoat-list__item fill">
+            <button ng-class="class_shake || 'topcoat-button--cta'" ng-click="setShake()">Shake</button>
+            &nbsp;&nbsp;
+            <button ng-class="class_wobble || 'topcoat-button--cta'" ng-click="setWobble()">Wobble</button>
+            &nbsp;&nbsp;
+            <button ng-class="class_flash || 'topcoat-button--cta'" ng-click="setFlash()">Flash</button>
+        </li>
+    </ul>
+    
+</div>

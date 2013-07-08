@@ -1,0 +1,36 @@
+
+<div id="main_action_bar" class="topcoat-navigation-bar">
+    <div class="topcoat-navigation-bar__item left quarter">
+        <a class="topcoat-icon-button--quiet" ng-click="goHome()">
+          <span class="topcoat-icon home-icon"></span>
+        </a>
+    </div>
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">Local DB</h1>
+    </div>
+    <div class="topcoat-navigation-bar__item right quarter">
+        <a class="topcoat-icon-button--quiet">
+          <span class="topcoat-icon topcoat-icon--edit"></span>
+        </a>
+    </div>
+</div>
+
+<div id="content_area" class="topcoat-list__item">
+    <div valign="center">
+        <label class="topcoat-navigation-bar__title" for"name">Name</label>
+        <input id="name" type="text" class="topcoat-text-input" ng-model="name" placeholder="text">
+        <button class="topcoat-icon-button" id="add" name="add" ng-click="addRow()">Add</button>
+    </div>
+    <div>
+        <label class="topcoat-navigation-bar__title" for"data">Data</label>
+        <input id="data" type="text" class="topcoat-text-input" ng-model="data" placeholder="text">
+        <button class="topcoat-icon-button" id="deleteDB" name="deleteDB" ng-click="deleteDB()">Delete Db</button>
+    </div>
+    <ul class="topcoat-list">
+        <li class="topcoat-list__item fill" ng-animate="'easyout-animate'" ng-repeat="row in rows">
+            <div class="list_entry" ng-swipe-right="deleteRow({{row.id}})">[{{row.id}}] {{row.name}} - {{row.data}}</div>
+        </li>
+    </ul>
+</div>
+
+

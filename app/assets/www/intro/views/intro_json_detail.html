@@ -1,0 +1,48 @@
+<div>
+    <div class="topcoat-navigation-bar">
+        <div class="topcoat-navigation-bar__item left quarter">
+            <a class="topcoat-icon-button--quiet" ng-click="goHome()">
+              <span class="topcoat-icon home-icon"></span>
+            </a>
+        </div>
+        <div class="topcoat-navigation-bar__item center half">
+            <h1 class="topcoat-navigation-bar__title">{{form_title}}</h1>
+        </div>
+        <div class="topcoat-navigation-bar__item right quarter">
+            <a class="topcoat-icon-button--quiet">
+              <span class="topcoat-icon topcoat-icon--edit"></span>
+            </a>
+        </div>
+    </div>
+
+    <form name="contactForm" ng-submit="contactFormSubmit()">
+        <fieldset>
+            <legend>Name</legend>
+            <div>
+                <label for="first_name">First Name: </label>
+                <input id="first_name" class="topcoat-text-input" type="text" ng-model="contact.first_name" required />
+            </div><div>
+                <label for="last_name">Last Name: </label>
+                <input id="last_name" class="topcoat-text-input" type="text" ng-model="contact.last_name" required />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Address</legend>
+            <div>
+                <label for="city">City: </label>
+                <input id="city" class="topcoat-text-input" type="text" ng-model="contact.city" required />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Actions</legend>
+            <div>
+                <button class="topcoat-button--cta" type="submit">{{form_action}}</button>
+                <button class="topcoat-button" ng-click="goBack()">Cancel</button>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Status</legend>
+            <label class="topcoat-text-input">{{status}}</label>
+        </fieldset>
+    </form>
+</div>

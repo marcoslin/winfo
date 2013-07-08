@@ -1,0 +1,31 @@
+<div>
+    <div class="topcoat-navigation-bar">
+        <div class="topcoat-navigation-bar__item left quarter">
+            <a class="topcoat-icon-button--quiet" ng-click="goHome()">
+              <span class="topcoat-icon home-icon"></span>
+            </a>
+        </div>
+        <div class="topcoat-navigation-bar__item center half">
+            <h1 class="topcoat-navigation-bar__title">Geolocation</h1>
+        </div>
+        <div class="topcoat-navigation-bar__item right quarter">
+            <a class="topcoat-icon-button--quiet">
+              <span class="topcoat-icon topcoat-icon--edit"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="topcoat-list__item">
+        <textarea class="topcoat-text-input text_area_input" ng-model="qr_text" rows="2"></textarea>
+        <br />
+        <button class="topcoat-icon-button" name="scan" ng-click="generateQR()">Generate QR</button>
+    </div> 
+    <div class="topcoat-list__item">
+        <button class="topcoat-icon-button" name="scan" ng-click="scanQR()">Scan QR Code</button>
+    </div>    
+    <ul class="topcoat-list">
+        <li class="topcoat-list__item" ng-repeat="result in results">
+        {{result}}
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,23 @@
+<div>
+    <div class="topcoat-navigation-bar">
+        <div class="topcoat-navigation-bar__item left quarter">
+            <a class="topcoat-icon-button--quiet" ng-click="goHome()">
+              <span class="topcoat-icon home-icon"></span>
+            </a>
+        </div>
+        <div class="topcoat-navigation-bar__item center half">
+            <h1 class="topcoat-navigation-bar__title">Contact</h1>
+        </div>
+        <div class="topcoat-navigation-bar__item right quarter">
+            <a class="topcoat-icon-button--quiet" ng-click="goToPage('/intro/contact/add')">
+              <span class="topcoat-icon plus-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <ul class="topcoat-list">
+        <li ng-class="row_style[row._id] || 'topcoat-list__item'" ng-repeat="row in rows">
+            <div class="list_entry" ng-click="goToPage('/intro/contact/{{row._id}}')" ng-swipe-right="deleteRow('{{row._id}}')">{{row.last_name}}, {{row.first_name}} - {{row.city}}</div>
+        </li>
+    </ul>
+</div>

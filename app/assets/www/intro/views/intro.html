@@ -1,0 +1,36 @@
+<div>
+    <div class="topcoat-navigation-bar">
+        <div class="topcoat-navigation-bar__item left quarter">
+            <a class="topcoat-icon-button--quiet" ng-click="goToMain()">
+              <span class="topcoat-icon topcoat-icon--menu-stack"></span>
+            </a>
+        </div>
+        <div class="topcoat-navigation-bar__item center half">
+            <h1 class="topcoat-navigation-bar__title">{{header_name}}</h1>
+        </div>
+        <div class="topcoat-navigation-bar__item right quarter">
+            <a class="topcoat-icon-button--quiet">
+              <span class="topcoat-icon topcoat-icon--edit"></span>
+            </a>
+        </div>
+    </div>
+    
+    <h3 class="topcoat-list__header">{{category_name}}</h3>
+    <ul class="topcoat-list">
+        <li class="topcoat-list__item" ng-click="goToPage('/intro/geo')">
+        GeoLocation
+        </li>
+        <li class="topcoat-list__item" ng-click="goToPage('/intro/db')">
+        Local DB
+        </li>
+        <li class="topcoat-list__item" ng-click="goToPage('/intro/contact')">
+        JSON Service
+        </li>
+        <li class="topcoat-list__item" ng-click="goToPage('/intro/qr')">
+        QR Code
+        </li>
+        <li class="topcoat-list__item" ng-click="goToPage('/intro/anim')">
+        Animation
+        </li>
+    </ul>
+</div>

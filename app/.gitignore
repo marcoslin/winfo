@@ -1,0 +1,18 @@
+# Android specific files
+*.apk
+*.ap_
+*.dex
+*.class
+
+# Android specific directories
+bin/
+gen/
+
+# Project specific
+test.js
+test.njs
+
+# Android dirs
+.project
+.settings/
+
